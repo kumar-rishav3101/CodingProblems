@@ -31,6 +31,7 @@ int main()
             if(length > K)
             {
                 cout<<"No";
+                return 0;
             }else if(length == K || ((length+2*i)<=K))
             {
                 cout<<"2";
