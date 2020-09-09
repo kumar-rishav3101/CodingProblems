@@ -8,11 +8,12 @@
 1593864348 source:f:\study\practise\compitative coding\competativecoding\09.hashtablechaining.cpp
 	<iostream>
 
-1594891272 source:f:\study\practise\compitative coding\competativecoding\temp.c
+1596953749 source:f:\study\practise\compitative coding\competativecoding\temp.c
 	<stdio.h>
 
-1594827924 source:f:\study\practise\compitative coding\competativecoding\temp.cpp
+1598337141 source:f:\study\practise\compitative coding\competativecoding\temp.cpp
 	<iostream>
+	<bits/stdc++.h>
 
 1594884305 source:f:\study\practise\compitative coding\competativecoding\18.frogandstone.cpp
 	<iostream>
@@ -43,4 +44,17 @@
 1595411981 source:f:\study\practise\compitative coding\competativecoding\26.dijkstra.c
 	<stdio.h>
 	<stdlib.h>
+
+1599632365 source:f:\study\practise\compitative coding\competativecoding\1.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1599633317 source:f:\study\practise\compitative coding\competativecoding\2.c
+	<stdio.h>
+	<stdlib.h>
+
+1599634301 source:f:\study\practise\compitative coding\competativecoding\4.cpp
+	<iostream>
+	<cstring>
 

@@ -1,80 +1,33 @@
 #include <iostream>
+#include<bits/stdc++.h>
+
 using namespace std;
-class Node
+
+int main()
 {
-    public:
-    int data;
-    Node *left;
-    Node *right;
-    Node(int data)
+   int arr[]={12,10,3,1,5,9};
+   int N=6;
+   vector<int> a,b;
+   for(int i=0;i<N;i++)
     {
-        this->data=data;
-        this->left=NULL;
-        this->right=NULL;
+        if(arr[i]%2==0)
+        b.push_back(arr[i]);
+
+        else
+        a.push_back(arr[i]);
     }
-};
+    sort(a.begin(),a.end());
+    sort(b.begin(),b.end(),greater<int>());
+    int j=0,k=0;
+     for(int i=0;i<N;i++)
+     {
+         if(i%2==0)
+        arr[i]=a[j++];
 
-class BST
-{
-    public:
+         else
+         arr[i]=b[k++];
+     }
 
-    Node *add(Node *root,int data)
-    {
-        Node *temp=root;
-        if(temp==NULL)
-        {
-            Node *n;
-            n= new Node(data);
-            return n;
-        }
-        if(temp->data > data )
-        {
-            temp->left = add(temp->left,data);
-        }else if(temp->data < data )
-        {
-            temp->right = add(temp->right,data);
-        }
-        return temp;
-    }
-
-
-
-    void display(Node *start)
-    {
-        if(start == NULL)
-            return;
-        display(start->left);
-        cout<<start->data<<" ";
-        display(start->right);
-    }
-
-
-};
-
-int main() {
-	Node *start=NULL;
-	BST b;
-	int n;
-	cin>>n;
-	while(n--)
-	{
-	    char x;
-	    int data;
-	    cin>>x;
-	    cin>>data;
-	    if(x=='i')
-	    {
-	        if(start==NULL)
-	        {
-	            start=b.add(start,data);
-	        }
-	        b.add(start,data);
-	    }else
-	    {
-	        b.del(start,NULL,data);
-	    }
-	}
-    b.display(start);
-
-	return 0;
+    for(int i=0;i<N;i++)
+        cout<<arr[i]<<" ";
 }

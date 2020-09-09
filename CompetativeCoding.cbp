@@ -148,11 +148,10 @@
 		</Unit>
 		<Unit filename="temp.c">
 			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="temp.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
+		<Unit filename="temp.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
